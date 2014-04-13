@@ -60,6 +60,7 @@ a:hover {
 
 .site-title a:hover {
     color: #ff80b3;
+    text-shadow: 0 0 0.2em red;
 }
 
 /*Nav*/
@@ -96,16 +97,23 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 36px;
-    color: white;
+    font-size: 29px;
+    color: #e5e5e5;
 }
 
 nav ul li:hover {
     outline: 0;
-    box-shadow: 0 0 2px #ff0000;
+    box-shadow: 0 0 2px #ffcee3;
+    background-color: rgba(255, 128, 179, 0.2);
 }
 
-.menu-item-55{
+nav ul li a:hover {
+    color: white;
+    text-shadow: 0 0 0.5em #ff0000;
+    border-radius: 5px;
+}
+
+.menu-item-55 {
     border-left: solid 1px rgba(91, 89, 92, 0.5);
 }
 
@@ -121,15 +129,16 @@ nav ul li:hover {
     margin: auto;
     border: solid 2px #554739;
     background-color: #e5e5e5;
-    border-radius : 10px;
+    border-radius: 10px;
     box-shadow: inset 2px 2px 5px #ff80b3;
 }
+
 .main-content {
     width: 1200px;
     margin: auto;
     border: solid 2px #554739;
     background-color: #e5e5e5;
-    border-radius : 10px;
+    border-radius: 10px;
 }
 
 article {
@@ -137,16 +146,17 @@ article {
 }
 
 article img {
-    box-shadow:0 0 6px #2e2e2e;
+    box-shadow: 0 0 6px #2e2e2e;
     margin-left: 12px;
     margin-right: 20px;
     margin-bottom: 5px;
-    border-radius : 10px;
+    border-radius: 10px;
 }
 
 .entry-content {
     padding-right: 20px;
     padding-left: 20px;
+    margin-bottom: 40px;
 }
 
 article header {
@@ -162,7 +172,17 @@ article header h1 {
     display: inline;
 }
 
-.entry-date{
+article:after {
+    content: " ";
+    display: block;
+    position: relative;
+    width:200px;
+    height:26px;
+    background-image: url(./images/aurora2.png);
+    margin: auto;
+}
+
+.entry-date {
     margin-left: 380px;
 }
 
@@ -190,13 +210,13 @@ span.author.vcard {
     color: #ff80b3;
 }
 
-#post-25 img{
-    border-radius : 0;
+#post-25 img {
+    border-radius: 0;
     box-shadow: none;
 }
 
 .wp-image-73 {
-    border-radius : 0;
+    border-radius: 0;
     box-shadow: none;
     margin-top: 45px;
     align-content: center;
