@@ -222,6 +222,11 @@ span.author.vcard {
 
 /* Asides */
 
+#primary-sidebar{
+    border: red;
+    float: left;
+}
+
 .screen-reader-text {
     color: white;
 }

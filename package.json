@@ -1,0 +1,20 @@
+{
+    "name": "cr-wp-theme",
+    "version": "0.0.0",
+    "description": "Leuh th14;21Rmeuh copro rosseau qu'il est bien.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neuneu2k/cr-wp-theme.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/neuneu2k/cr-wp-theme/issues"
+    },
+    "homepage": "https://github.com/neuneu2k/cr-wp-theme",
+    "devDependencies": {
+        "grunt": "~0.4.2"
+    }
+
+}
