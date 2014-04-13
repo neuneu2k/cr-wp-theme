@@ -19,17 +19,20 @@ body {
 }
 
 a {
-    color: #010101;
+    color: #86171c;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff80b3;
-    outline: 0;
+    color: #ff80b3
 }
 
 .alignright {
     float: right;
+}
+
+.alignleft {
+    float: left;
 }
 
 /* Header */
@@ -50,9 +53,9 @@ a:hover {
 .site-title a {
     display: block;
     padding-left: 9px;
-    padding-top: 45px;
+    padding-top: 58px;
     color: #ff0000;
-    font-size: 60px;
+    font-size: 52px;
 }
 
 .site-title a:hover {
@@ -72,6 +75,7 @@ a:hover {
 nav {
     color: white;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+    box-shadow: 0 0 2px #2e2e2e;
 }
 
 nav ul {
@@ -92,13 +96,13 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 32px;
+    font-size: 36px;
     color: white;
 }
 
 nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.125);
     outline: 0;
+    box-shadow: 0 0 2px #ff0000;
 }
 
 .menu-item-55{
@@ -134,8 +138,9 @@ article {
 
 article img {
     box-shadow:0 0 6px #2e2e2e;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 12px;
+    margin-right: 20px;
+    margin-bottom: 5px;
     border-radius : 10px;
 }
 
@@ -145,15 +150,20 @@ article img {
 }
 
 article header {
-    margin: 40px 20px 40px 20px;
+    margin: 40px 20px 60px 20px;
     border-bottom: solid #adadad 1px;
+    text-align: center;
 }
 
 article header h1 {
     font-size: 40px;
     font-weight: 700;
-    color: #010101;
+    color: #86171c;
     display: inline;
+}
+
+.entry-date{
+    margin-left: 380px;
 }
 
 .entry-meta span {
@@ -183,6 +193,13 @@ span.author.vcard {
 #post-25 img{
     border-radius : 0;
     box-shadow: none;
+}
+
+.wp-image-73 {
+    border-radius : 0;
+    box-shadow: none;
+    margin-top: 45px;
+    align-content: center;
 }
 
 /* Comments */
