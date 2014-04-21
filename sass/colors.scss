@@ -18,7 +18,6 @@ a:hover {
   background-color: black;
 }
 
-
 .site-title a {
   color: #ff0000;
 }
@@ -35,22 +34,20 @@ nav {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
 
   ul li {
+
     border-right: solid 1px rgba(91, 89, 92, 0.5);
 
     :hover {
-      box-shadow: 0 0 2px #ffcee3;
-      background-color: rgba(255, 128, 179, 0.2);
+      color: #fff7f4;
+      text-shadow: 0 0 0.5em #ff0000;
+      box-shadow: 0 0 5px $secondarycolor;
+      border-radius: 5px;
     }
 
     a {
       color: #e5e5e5;
-      :hover {
-        color: white;
-        text-shadow: 0 0 0.5em #ff0000;
-        border-radius: 5px;
-      }
+    }
   }
-}
 }
 
 .menu-item:first-of-type {
@@ -93,3 +90,7 @@ article header h1 {
 }
 
 /* Asides */
+
+#secondary {
+  color: $secondarycolor;
+}
