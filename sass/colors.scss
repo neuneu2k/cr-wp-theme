@@ -1,15 +1,21 @@
-$maincolor: #86171c;
+$maincolor: #94191f;
 $secondarycolor: #ff80b3;
+
+@mixin glow {
+  transition-property: text-shadow box-shadow border-radius color;
+  transition-duration: .3s;
+}
 
 /* General */
 
 a {
   color: $maincolor;
   text-decoration: none;
-}
+  @include glow;
 
-a:hover {
-  color: $secondarycolor;
+  &:hover {
+    color: $secondarycolor;
+  }
 }
 
 /* Header */
@@ -19,12 +25,12 @@ a:hover {
 }
 
 .site-title a {
-  color: #ff0000;
-}
+  color: red;
 
-.site-title a:hover {
-  color: $secondarycolor;
-  text-shadow: 0 0 0.2em red;
+  &:hover {
+    color: $secondarycolor;
+    text-shadow: 0 0 0.2em red;
+  }
 }
 
 /*Nav*/
@@ -34,16 +40,17 @@ nav {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
 
   ul li {
-
+    @include glow;
     border-right: solid 1px rgba(91, 89, 92, 0.5);
 
-    :hover {
-      color: #fff7f4;
+    &:hover {
       text-shadow: 0 0 0.5em #ff0000;
       box-shadow: 0 0 5px $secondarycolor;
       border-radius: 5px;
+      a {
+        color: lighten($secondarycolor, 10%);
+      }
     }
-
     a {
       color: #e5e5e5;
     }
@@ -92,5 +99,9 @@ article header h1 {
 /* Asides */
 
 #secondary {
-  color: $secondarycolor;
+  color: lighten($secondarycolor, 10%);
+}
+
+#content-sidebar {
+  color: #adadad;
 }

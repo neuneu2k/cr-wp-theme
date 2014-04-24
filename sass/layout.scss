@@ -1,6 +1,11 @@
 $column: (95%/6);
 $break-normal: 1600px;
 
+@mixin window {
+  transition-property: height width;
+  transition-duration: .6s;
+}
+
 // Site Header
 #masthead {
   h1.site-title {
@@ -39,7 +44,6 @@ nav ul {
     @media screen and (max-width: $break-normal) {
       width: 5*$column;
       max-width: 5*$column;
-      margin-right: 5px;
     }
   }
 
@@ -49,6 +53,20 @@ nav ul {
     float: left;
     overflow: hidden;
   }
+
+  #primary {
+    float: left;
+  }
+
+  #primary-sidebar {
+    float: left;
+  }
+
+  #content-sidebar {
+    float: right;
+    width: 1px;
+  }
+
 }
 
 // Site Footer
@@ -65,8 +83,3 @@ nav ul {
   margin-left: 2*$column;
   margin-right: 1.5*$column;
 }
-
-#primary-sidebar {
-  float: left;
-}
-
