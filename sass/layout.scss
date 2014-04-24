@@ -41,6 +41,22 @@ nav ul {
       max-width: 5*$column;
       margin-right: 5px;
     }
+
+    #primary {
+      width: 4*$column;
+      max-width: 4*$column;
+      padding: 0;
+      margin: 0;
+      float:left;
+    }
+
+    #content-sidebar {
+      width: 2*$column;
+      max-width: 2*$column;
+      padding: 0;
+      margin: 0;
+      float:right;
+    }
   }
 
   #secondary {
