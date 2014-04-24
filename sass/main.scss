@@ -5,7 +5,6 @@
 /* Général */
 
 body {
-
   background: url(../images/bgouf.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -29,16 +28,15 @@ body {
 }
 
 .site-title {
-  background-image: url(../images/banner2.jpg);
-  background-repeat: no-repeat;
+  background: url(../images/banner2.jpg) no-repeat;
   background-size: cover;
 }
 
 .site-title a {
   display: block;
-  padding-left: 9px;
-  padding-top: 58px;
-  font-size: 52px;
+  padding-left: 0.5*$line;
+  padding-top: 3*$line;
+  font-size: 3*$line;
 }
 
 /*Nav*/
@@ -52,14 +50,12 @@ body {
 }
 
 nav {
-
   ul li {
-
     :hover {
       outline: 0;
     }
-    }
   }
+}
 
 .menu-item:first-of-type {
   border-left: solid 1px rgba(91, 89, 92, 0.5);
@@ -68,34 +64,35 @@ nav {
 /*main*/
 
 .site-content {
-  border-radius: 10px;
-
+  border-radius: 0.5*$line;
 }
 
 .main-content {
-
-  border-radius: 10px;
+  border-top-left-radius: .5*$line;
+  border-bottom-left-radius: .5*$line;
 }
 
 article {
-  padding-bottom: 40px;
+  padding-bottom: 2*$line;
 }
 
 article img {
-  margin-left: 12px;
-  margin-right: 20px;
-  margin-bottom: 5px;
+  margin-left: $line;
+  margin-right: $line;
+  margin-bottom: $line/4;
   border-radius: 10px;
 }
 
 .entry-content {
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 40px;
+  padding-right: $line;
+  padding-left: $line;
+  margin-bottom: 2*$line;
 }
 
 article header {
-  margin: 40px 20px 60px 20px;
+  // Todo: convert to lines
+  margin-top: $line;
+  margin-bottom: $line;
   text-align: center;
 }
 
@@ -104,30 +101,14 @@ article:after {
   display: block;
   position: relative;
   width: 175px;
-  height: 23px;
+  height: 23px; // TODO: change the image so that it is exactly a multiple of $line height...
   background-image: url(../images/aurora2.png);
   margin: auto;
 }
 
-.entry-meta span {
-  display: table-cell;
-  padding-bottom: 3px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 3px;
-  margin-right: 5px;
-}
-
-span.author.vcard {
-  border-right: none;
-  border-bottom: none;
-  border-top: none;
-}
-
-
 /* Comments */
 #comments {
-  margin-left: 20px;
+  margin-left: $line;
 }
 
 /* Asides */

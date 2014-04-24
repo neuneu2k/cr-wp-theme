@@ -1,8 +1,9 @@
-/* Général */
+@import "layout";
 
+/* Général */
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: $line;
 }
 
 a {
@@ -12,12 +13,9 @@ a {
 /*Nav*/
 
 nav {
-
   ul li {
-
     a {
-      font-size: 29px;
-
+      font-size: 1.5*$line;
     }
   }
 }
@@ -25,13 +23,13 @@ nav {
 /*main*/
 
 article header h1 {
-  font-size: 40px;
+  font-size: 2*$line;
   font-weight: 700;
   display: inline;
 }
 
 .entry-meta a {
-  font-size: 14px;
+  font-size: 0.75*$line;
 }
 
 /* Comments */
