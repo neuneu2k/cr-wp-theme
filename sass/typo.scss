@@ -1,6 +1,7 @@
 @import "layout";
 
 /* Général */
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: $line;
@@ -8,6 +9,27 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+/*Header*/
+
+#masthead {
+
+  .site-title a {
+    display: block;
+    padding-left: 0.5*$line;
+    padding-top: 3*$line;
+    font-size: 2.8*$line;
+  }
+
 }
 
 /*Nav*/

@@ -1,14 +1,47 @@
-$line:20px;
+$line: 20px;
 $column: (100%/6);
-$break-normal: 1600px;
+
+/*general*/
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: $line;
+}
+
+body {
+  background: url(../images/bgouf.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page img {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 // Site Header
+
+.screen-reader-text {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
 #masthead {
-  h1.site-title {
+
+  .site-title {
+    background: url(../images/banner2.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
     width: 100%;
     height: 180px;
     margin: auto;
@@ -35,32 +68,82 @@ nav ul {
 }
 
 // Site Content zone
+
+.site-content {
+  border-radius: 0.5*$line;
+}
+
 #main {
   #main-content {
     width: 5*$column;
     max-width: 5*$column;
     float: right;
-
-    #primary {
-      width: 4*$column;
-      max-width: 4*$column;
-      float:left;
-    }
+    border-top-left-radius: .5*$line;
+    border-bottom-left-radius: .5*$line;
 
     #content-sidebar {
       width: 2*$column;
       max-width: 2*$column;
       padding-left: 2*$line;
-      float:right;
+      float: right;
+    }
+
+    .entry-content {
+      padding-right: $line;
+      padding-left: $line;
+      margin-bottom: 2*$line;
+
+      article {
+        padding-bottom: 2*$line;
+      }
     }
   }
 
-  #secondary {
-    width: $column;
-    max-width: $column;
-    float: left;
+  article header { //pas réussi a le faire marcher en le casant dans l'arbre //
+    margin-top: 2*$line;
+    margin-bottom: 2*$line;
+    text-align: center;
   }
+
+  article:after {
+    content: " ";
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 1.1*$line;
+    background-image: url(../images/aurora2.png);
+    margin: auto;
+  }
+
+
+
+
+  img {
+    margin-left: .5*$line;
+    margin-right: $line;
+    margin-bottom: $line/4;
+    border-radius: 10px;
+  }
+
+  #primary {
+    width: 4*$column;
+    max-width: 4*$column;
+    float: left;
+    }
+  }
+
+
+#secondary {
+  width: $column;
+  max-width: $column;
+  float: left;
 }
+
+/* Comments */
+#comments {
+  margin-left: $line;
+}
+
 
 // Site Footer
 #colophon {
@@ -73,8 +156,7 @@ nav ul {
 }
 
 .entry-meta {
-  margin-left: 2*$column;
-  margin-right: 1.5*$column;
+  margin: auto
 }
 
 #primary-sidebar {

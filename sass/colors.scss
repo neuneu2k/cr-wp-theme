@@ -39,6 +39,10 @@ nav {
   color: white;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
 
+  .menu-item:first-of-type {
+    border-left: solid 1px rgba(91, 89, 92, 0.5);
+  }
+
   ul li {
     @include glow;
     border-right: solid 1px rgba(91, 89, 92, 0.5);
@@ -47,6 +51,7 @@ nav {
       text-shadow: 0 0 0.5em #ff0000;
       box-shadow: 0 0 5px $secondarycolor;
       border-radius: 5px;
+      outline: 0;
       a {
         color: lighten($secondarycolor, 10%);
       }
@@ -63,14 +68,16 @@ nav {
 
 /*main*/
 
-.site-content {
+#content {
   border: solid 2px #554739;
   background-color: #e5e5e5;
   box-shadow: inset 2px 2px 5px $secondarycolor;
 }
 
 .main-content {
-  border: solid 2px #554739;
+}
+
+.primary {
   background-color: #e5e5e5;
 }
 
