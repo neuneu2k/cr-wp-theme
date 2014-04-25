@@ -99,25 +99,6 @@ nav ul {
     }
   }
 
-  article header { //pas réussi a le faire marcher en le casant dans l'arbre //
-    margin-top: 2*$line;
-    margin-bottom: 2*$line;
-    text-align: center;
-  }
-
-  article:after {
-    content: " ";
-    display: block;
-    position: relative;
-    width: 175px;
-    height: 1.1*$line;
-    background-image: url(../images/aurora2.png);
-    margin: auto;
-  }
-
-
-
-
   img {
     margin-left: .5*$line;
     margin-right: $line;
@@ -129,9 +110,24 @@ nav ul {
     width: 4*$column;
     max-width: 4*$column;
     float: left;
+    article {
+      header {
+        margin-top: 2*$line;
+        margin-bottom: 2*$line;
+        text-align: center;
+      }
+      &:after {
+        content: " ";
+        display: block;
+        position: relative;
+        width: 175px;
+        height: 1.1*$line;
+        background-image: url(../images/aurora2.png);
+        margin: auto;
+      }
     }
   }
-
+}
 
 #secondary {
   width: $column;
@@ -143,7 +139,6 @@ nav ul {
 #comments {
   margin-left: $line;
 }
-
 
 // Site Footer
 #colophon {
