@@ -74,6 +74,9 @@ nav ul {
 }
 
 #main {
+  max-width: 6*$column;
+  margin: auto;
+
   #main-content {
     width: 5*$column;
     max-width: 5*$column;
@@ -88,34 +91,24 @@ nav ul {
       float: right;
     }
 
-    .entry-content {
-      padding-right: $line;
-      padding-left: $line;
-      margin-bottom: 2*$line;
-
-      article {
-        padding-bottom: 2*$line;
-      }
-    }
-  }
-
-  img {
-    margin-left: .5*$line;
-    margin-right: $line;
-    margin-bottom: $line/4;
-    border-radius: 10px;
   }
 
   #primary {
     width: 4*$column;
     max-width: 4*$column;
     float: left;
+
     article {
+      
       header {
         margin-top: 2*$line;
         margin-bottom: 2*$line;
         text-align: center;
+        .entry-meta {
+          margin: auto
+        }
       }
+
       &:after {
         content: " ";
         display: block;
@@ -125,6 +118,20 @@ nav ul {
         background-image: url(../images/aurora2.png);
         margin: auto;
       }
+
+      .entry-content {
+        padding-right: $line;
+        padding-left: $line;
+        margin-bottom: 2*$line;
+        img {
+          margin-left: .5*$line;
+          margin-right: $line;
+          margin-bottom: $line/4;
+          border-radius: 10px;
+        }
+
+      }
+
     }
   }
 }
@@ -143,15 +150,6 @@ nav ul {
 // Site Footer
 #colophon {
   clear: both;
-}
-
-#main {
-  max-width: 6*$column;
-  margin: auto;
-}
-
-.entry-meta {
-  margin: auto
 }
 
 #primary-sidebar {
